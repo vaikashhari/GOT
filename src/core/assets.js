@@ -40,7 +40,7 @@ const WEB = import.meta.glob(
 )
 
 const EXTERNAL_VIDEO_ROLES = new Set(['dany', 'jon', 'world'])
-const MEDIA_BASE_URL = (import.meta.env.VITE_MEDIA_BASE_URL || '').replace(/\/$/, '')
+const MEDIA_BASE_URL = (import.meta.env.VITE_MEDIA_BASE_URL || 'https://pub-fbb06fddd3ab45688c507e7da7436d49.r2.dev').replace(/\/$/, '')
 
 function externalVideoUrl (rel, entry) {
   if (!entry?.out || !MEDIA_BASE_URL) return null
