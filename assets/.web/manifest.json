@@ -8,12 +8,12 @@
       "frames": 3741,
       "width": 1770,
       "height": 990,
-      "bytes": 55768847
+      "bytes": 55766886
     },
     "out": ".web/dany/dany.web.mp4",
     "poster": ".web/dany/dany.poster.webp",
     "still": ".web/dany/dany.final.webp",
-    "srcHash": "97991149:1784464950157"
+    "srcHash": "97991149:1790428706893"
   },
   "ending/ending.mov": {
     "kind": "video",
@@ -24,12 +24,12 @@
       "frames": 200,
       "width": 1180,
       "height": 642,
-      "bytes": 1545276
+      "bytes": 1545275
     },
     "out": ".web/ending/ending.web.mp4",
     "poster": ".web/ending/ending.poster.webp",
     "still": ".web/ending/ending.final.webp",
-    "srcHash": "3475329:1784469159453"
+    "srcHash": "3475329:1790428706911"
   },
   "epilogue/epilogue.mov": {
     "kind": "video",
@@ -40,12 +40,12 @@
       "frames": 396,
       "width": 1770,
       "height": 964,
-      "bytes": 3170322
+      "bytes": 3169922
     },
     "out": ".web/epilogue/epilogue.web.mp4",
     "poster": ".web/epilogue/epilogue.poster.webp",
     "still": ".web/epilogue/epilogue.final.webp",
-    "srcHash": "3422207:1784470652152"
+    "srcHash": "3422207:1790428706964"
   },
   "intro/intro.mov": {
     "kind": "video",
@@ -56,12 +56,12 @@
       "frames": 748,
       "width": 1770,
       "height": 978,
-      "bytes": 10486751
+      "bytes": 10487607
     },
     "out": ".web/intro/intro.web.mp4",
     "poster": ".web/intro/intro.poster.webp",
     "still": ".web/intro/intro.final.webp",
-    "srcHash": "25740402:1784455347213"
+    "srcHash": "25740402:1790428707012"
   },
   "jon/jon.mov": {
     "kind": "video",
@@ -72,12 +72,12 @@
       "frames": 4619,
       "width": 1180,
       "height": 566,
-      "bytes": 38096212
+      "bytes": 38096211
     },
     "out": ".web/jon/jon.web.mp4",
     "poster": ".web/jon/jon.poster.webp",
     "still": ".web/jon/jon.final.webp",
-    "srcHash": "162576338:1784454560489"
+    "srcHash": "162576338:1790428707419"
   },
   "world/world.mov": {
     "kind": "video",
@@ -88,11 +88,11 @@
       "frames": 2150,
       "width": 1770,
       "height": 800,
-      "bytes": 41019574
+      "bytes": 41018330
     },
     "out": ".web/world/world.web.mp4",
     "poster": ".web/world/world.poster.webp",
     "still": ".web/world/world.final.webp",
-    "srcHash": "97144448:1784458471498"
+    "srcHash": "97144448:1790428707864"
   }
 }
