@@ -121,6 +121,11 @@ export function createScrubber ({ canvas, source, autostart = true, maxFrames = 
   // deferred chapters only fetch metadata until their extraction actually
   // starts — four films buffering at boot would drown the opening scenes
   video.preload = autostart ? 'auto' : 'metadata'
+  // R2-hosted chapter videos are cross-origin and are drawn into canvas.
+  // Request CORS-enabled media so canvas frame extraction is not tainted.
+  if (source.src && /^https?:\/\//.test(source.src) && !source.src.startsWith(location.origin)) {
+    video.crossOrigin = 'anonymous'
+  }
   video.src = source.src
 
   // Some mobile browsers only allow seek+draw after a gesture "unlocks" the
