@@ -30,9 +30,24 @@ const IMAGES = import.meta.glob(
 // fast-glob skips dot-directories for wildcard segments, so .web needs its
 // own explicit pattern.
 const WEB = import.meta.glob(
-  '/assets/.web/**/*.{mp4,webm,webp,png,jpg,jpeg,m4a,mp3,ogg,aac}',
+  [
+    '/assets/.web/**/*.{mp4,webm,webp,png,jpg,jpeg,m4a,mp3,ogg,aac}',
+    '!/assets/.web/dany/dany.web.mp4',
+    '!/assets/.web/jon/jon.web.mp4',
+    '!/assets/.web/world/world.web.mp4',
+  ],
   { eager: true, query: '?url', import: 'default' },
 )
+
+const EXTERNAL_VIDEO_ROLES = new Set(['dany', 'jon', 'world'])
+const MEDIA_BASE_URL = (import.meta.env.VITE_MEDIA_BASE_URL || '').replace(/\/$/, '')
+
+function externalVideoUrl (rel, entry) {
+  if (!entry?.out || !MEDIA_BASE_URL) return null
+  const match = entry.out.match(/^\.web\/(dany|jon|world)\/([^/]+\.web\.mp4)$/)
+  if (!match || !EXTERNAL_VIDEO_ROLES.has(match[1])) return null
+  return `${MEDIA_BASE_URL}/${match[1]}/${match[2]}`
+}
 
 const MANIFEST_MOD = import.meta.glob('/assets/.web/manifest.json', { eager: true, import: 'default' })
 const manifest = Object.values(MANIFEST_MOD)[0] || {}
@@ -90,7 +105,7 @@ function resolve (rawPath) {
     still: entry?.still ? webUrlFor(entry.still) : null,
   }
   if (entry?.out && entry.out !== rel) {
-    out.src = webUrlFor(entry.out) || out.src
+    out.src = externalVideoUrl(rel, entry) || webUrlFor(entry.out) || out.src
   }
   if (!out.src && import.meta.env.DEV) {
     // pipeline hasn't processed it — the dev server serves the raw file
