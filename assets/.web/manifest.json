@@ -1,0 +1,98 @@
+{
+  "dany/dany.mov": {
+    "kind": "video",
+    "src": "dany/dany.mov",
+    "meta": {
+      "duration": 65.083991,
+      "fps": 60,
+      "frames": 3741,
+      "width": 1770,
+      "height": 990,
+      "bytes": 55768847
+    },
+    "out": ".web/dany/dany.web.mp4",
+    "poster": ".web/dany/dany.poster.webp",
+    "still": ".web/dany/dany.final.webp",
+    "srcHash": "97991149:1784464950157"
+  },
+  "ending/ending.mov": {
+    "kind": "video",
+    "src": "ending/ending.mov",
+    "meta": {
+      "duration": 6.666667,
+      "fps": 30,
+      "frames": 200,
+      "width": 1180,
+      "height": 642,
+      "bytes": 1545276
+    },
+    "out": ".web/ending/ending.web.mp4",
+    "poster": ".web/ending/ending.poster.webp",
+    "still": ".web/ending/ending.final.webp",
+    "srcHash": "3475329:1784469159453"
+  },
+  "epilogue/epilogue.mov": {
+    "kind": "video",
+    "src": "epilogue/epilogue.mov",
+    "meta": {
+      "duration": 6.592993,
+      "fps": 60,
+      "frames": 396,
+      "width": 1770,
+      "height": 964,
+      "bytes": 3170322
+    },
+    "out": ".web/epilogue/epilogue.web.mp4",
+    "poster": ".web/epilogue/epilogue.poster.webp",
+    "still": ".web/epilogue/epilogue.final.webp",
+    "srcHash": "3422207:1784470652152"
+  },
+  "intro/intro.mov": {
+    "kind": "video",
+    "src": "intro/intro.mov",
+    "meta": {
+      "duration": 12.466667,
+      "fps": 60,
+      "frames": 748,
+      "width": 1770,
+      "height": 978,
+      "bytes": 10486751
+    },
+    "out": ".web/intro/intro.web.mp4",
+    "poster": ".web/intro/intro.poster.webp",
+    "still": ".web/intro/intro.final.webp",
+    "srcHash": "25740402:1784455347213"
+  },
+  "jon/jon.mov": {
+    "kind": "video",
+    "src": "jon/jon.mov",
+    "meta": {
+      "duration": 76.995,
+      "fps": 59.94005994005994,
+      "frames": 4619,
+      "width": 1180,
+      "height": 566,
+      "bytes": 38096212
+    },
+    "out": ".web/jon/jon.web.mp4",
+    "poster": ".web/jon/jon.poster.webp",
+    "still": ".web/jon/jon.final.webp",
+    "srcHash": "162576338:1784454560489"
+  },
+  "world/world.mov": {
+    "kind": "video",
+    "src": "world/world.mov",
+    "meta": {
+      "duration": 67.983333,
+      "fps": 60,
+      "frames": 2150,
+      "width": 1770,
+      "height": 800,
+      "bytes": 41019574
+    },
+    "out": ".web/world/world.web.mp4",
+    "poster": ".web/world/world.poster.webp",
+    "still": ".web/world/world.final.webp",
+    "srcHash": "97144448:1784458471498"
+  }
+}

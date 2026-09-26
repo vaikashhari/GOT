@@ -1,0 +1,99 @@
+/* ---------------------------------------------------------------------------
+   Fixed navigation — invisible during the prologue, arrives with the hero.
+--------------------------------------------------------------------------- */
+#site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-nav);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(18px, 2.6vh, 28px) clamp(22px, 4.5vw, 64px);
+  opacity: 0;
+  will-change: transform, opacity;
+  /* a whisper of depth so it reads over any scene */
+  background: linear-gradient(to bottom, rgba(5, 5, 7, 0.62), transparent);
+}
+
+.nav-logo { display: flex; align-items: center; min-height: 34px; }
+.nav-logo-img { height: clamp(26px, 3.2vh, 36px); width: auto; }
+.nav-wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(0.78rem, 1.15vw, 0.95rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: linear-gradient(100deg, var(--parchment) 20%, var(--gold-bright) 50%, var(--parchment) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(22px, 3.4vw, 52px);
+}
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 2px;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--parchment-dim);
+  transition: color var(--dur-fast) ease;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.45s var(--ease-out);
+}
+@media (hover: hover) {
+  .nav-links a:hover { color: var(--gold-bright); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+}
+.nav-links a:focus-visible { color: var(--gold-bright); }
+.nav-links a:focus-visible::after { transform: scaleX(1); }
+
+.nav-audio[hidden] { display: none; }
+.nav-audio {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: clamp(14px, 2vw, 28px);
+  border: 1px solid rgba(201, 163, 95, 0.3);
+  border-radius: 50%;
+  color: var(--parchment-dim);
+  transition: color var(--dur-fast) ease, border-color var(--dur-fast) ease;
+}
+.nav-audio:hover, .nav-audio.is-on { color: var(--gold-bright); border-color: rgba(232, 194, 122, 0.7); }
+.nav-audio svg { width: 15px; height: 15px; }
+.nav-audio .wave { transition: opacity var(--dur-fast) ease; opacity: 0.25; }
+.nav-audio.is-on .wave { opacity: 1; }
+
+@media (max-width: 640px) {
+  #site-nav { padding-left: 18px; padding-right: 18px; }
+  .nav-wordmark { font-size: 0.66rem; letter-spacing: 0.2em; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 0.58rem; letter-spacing: 0.14em; }
+}
+
+@media (max-width: 400px) {
+  .nav-wordmark { font-size: 0.6rem; letter-spacing: 0.14em; }
+  .nav-links { gap: 10px; }
+  .nav-links a { font-size: 0.56rem; letter-spacing: 0.1em; }
+}

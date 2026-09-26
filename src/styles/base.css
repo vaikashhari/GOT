@@ -1,0 +1,77 @@
+/* ---------------------------------------------------------------------------
+   Base — reset, page chrome, veil, focus, scrollbar.
+--------------------------------------------------------------------------- */
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  background: var(--ink-0);
+  scrollbar-width: thin;
+  scrollbar-color: #23262f transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+body {
+  background: var(--ink-0);
+  color: var(--parchment);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection { background: rgba(201, 163, 95, 0.28); color: var(--parchment); }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #23262f;
+  border-radius: 5px;
+  border: 2px solid var(--ink-0);
+}
+::-webkit-scrollbar-thumb:hover { background: #323643; }
+
+img, svg, video, canvas { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+main {
+  position: relative;
+  z-index: var(--z-content);
+}
+
+/* The prologue section is pure scroll runway — the fixed stage renders it */
+#prologue {
+  position: relative;
+  pointer-events: none;
+}
+
+/* Boot veil — pure black until the first frame is composed, then a slow lift */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-veil);
+  background: var(--ink-0);
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 1.4s ease 0.15s, visibility 0s linear 1.6s;
+}
+body.is-ready::after { opacity: 0; visibility: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  body::after { transition-duration: 0.3s; }
+}

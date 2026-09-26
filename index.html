@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#050507" />
+  <meta name="description" content="A premium cinematic interactive journey through ice and fire — inspired by the world of Game of Thrones." />
+  <title>Game of Thrones — A Cinematic Experience</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    /* critical: pure black before anything loads — the darkness is intentional */
+    html, body { margin: 0; background: #050507; }
+  </style>
+</head>
+<body>
+  <!-- first tab stop: doubles as a skip-link for keyboard and screen-reader users -->
+  <button id="skip-intro" type="button" aria-label="Skip the cinematic prologue and go to the main content">
+    <span>Skip prologue</span>
+  </button>
+
+  <header id="site-nav" aria-label="Primary">
+    <a class="nav-logo" href="#top" aria-label="Home"></a>
+    <nav aria-label="Site">
+      <ul class="nav-links"></ul>
+    </nav>
+    <button class="nav-audio" type="button" hidden aria-pressed="false" aria-label="Toggle ambience sound">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M11 5 6.5 9H3v6h3.5L11 19V5Z" />
+        <path class="wave" d="M15.5 8.5a5 5 0 0 1 0 7" />
+        <path class="wave" d="M18.4 6a9 9 0 0 1 0 12" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- the theatre: fixed, full-viewport, purely decorative -->
+  <div id="stage" aria-hidden="true">
+    <div id="scrub-layer">
+      <canvas id="scrub-canvas"></canvas>
+    </div>
+    <div id="light-cold" class="light"></div>
+    <div id="light-fire" class="light"></div>
+    <div id="glow" class="light"></div>
+    <canvas id="atmo-canvas"></canvas>
+    <div id="flash" class="light"></div>
+    <div id="vignette"></div>
+    <div id="grain"></div>
+  </div>
+
+  <!-- prologue overlay text -->
+  <p class="prologue-caption" aria-hidden="true"></p>
+  <p class="prologue-caption" aria-hidden="true"></p>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span class="scroll-cue-label">Scroll</span>
+    <span class="scroll-cue-line"></span>
+  </div>
+
+  <main id="top">
+    <!-- scroll runway for the cinematic prologue; height set from config -->
+    <section id="prologue" aria-hidden="true"></section>
+
+    <section id="hero" aria-label="Welcome">
+      <div class="hero-layers"></div>
+      <div class="hero-shaft s1"></div>
+      <div class="hero-shaft s2"></div>
+      <div class="hero-cursor-glow"></div>
+      <div class="hero-content">
+        <p class="hero-kicker"></p>
+        <h1 class="hero-heading"></h1>
+        <div class="hero-rule"></div>
+        <p class="hero-subtitle"></p>
+        <button class="hero-cta" type="button"></button>
+      </div>
+      <div class="hero-ground"></div>
+    </section>
+
+    <section id="world" aria-label="The Known World">
+      <div class="world-viewport">
+        <canvas id="world-canvas"></canvas>
+        <div class="world-light"></div>
+        <div class="world-grain"></div>
+        <div class="world-vignette"></div>
+        <div class="world-veil"></div>
+        <p class="world-kicker" aria-hidden="true"></p>
+        <div class="world-captions"></div>
+        <div class="world-chill"></div>
+      </div>
+    </section>
+
+    <section id="jon" aria-label="Jon Snow — The North">
+      <div class="jon-viewport">
+        <div class="jon-shake">
+          <canvas id="jon-canvas"></canvas>
+          <div class="jon-cold"></div>
+          <div class="jon-flash"></div>
+          <canvas id="jon-snow"></canvas>
+        </div>
+        <div class="jon-vignette"></div>
+        <div class="jon-grain"></div>
+        <div class="jon-veil"></div>
+        <p class="jon-kicker" aria-hidden="true"></p>
+        <div class="jon-moments" aria-hidden="true"></div>
+        <div class="jon-finale"></div>
+      </div>
+    </section>
+
+    <section id="dany" aria-label="Daenerys Targaryen — Fire and Blood">
+      <div class="dany-viewport">
+        <canvas id="dany-canvas"></canvas>
+        <div class="dany-warm"></div>
+        <div class="dany-burst"></div>
+        <canvas id="dany-fire"></canvas>
+        <div class="dany-vignette"></div>
+        <div class="dany-grain"></div>
+        <div class="dany-veil"></div>
+        <p class="dany-kicker" aria-hidden="true"></p>
+        <div class="dany-moments" aria-hidden="true"></div>
+        <div class="dany-finale"></div>
+      </div>
+    </section>
+
+    <section id="ending" aria-label="Finale">
+      <div class="ending-viewport">
+        <video class="ending-video" muted playsinline loop preload="auto"></video>
+        <div class="ending-vignette"></div>
+        <div class="ending-grain"></div>
+        <div class="ending-veil"></div>
+        <!-- the fire lives above the darkness -->
+        <video class="ending-dragon" muted playsinline preload="auto"></video>
+        <canvas class="ending-fire-canvas"></canvas>
+        <div class="ending-flash"></div>
+        <h2 class="ending-title"></h2>
+        <a class="ending-return" href="#top"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="epilogue" aria-label="Epilogue">
+    <video class="epilogue-video" muted playsinline loop preload="metadata"></video>
+    <div class="epilogue-shade"></div>
+    <div class="epilogue-vignette"></div>
+    <div class="epilogue-grain"></div>
+    <div class="epilogue-content">
+      <p class="epilogue-heading"></p>
+      <div class="epilogue-rule"></div>
+      <p class="epilogue-line"></p>
+    </div>
+    <div class="epilogue-bar"></div>
+  </footer>
+
+  <!-- the crossing between worlds -->
+  <div id="portal" aria-hidden="true">
+    <canvas id="portal-canvas"></canvas>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

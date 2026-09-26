@@ -1,0 +1,11 @@
+/assets/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/assets/.web/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+*.mp4
+  Cache-Control: public, max-age=604800, must-revalidate
+
+*.webp
+  Cache-Control: public, max-age=604800, must-revalidate
