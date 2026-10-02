@@ -1,0 +1,109 @@
+<svg width="1600" height="560" viewBox="0 0 1600 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Game of Thrones — A Cinematic Experience</title>
+<desc id="desc">A dark medieval fire-and-ice README header for a cinematic Game of Thrones inspired web experience.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="560" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#05080E"/>
+    <stop offset=".38" stop-color="#0B1118"/>
+    <stop offset=".62" stop-color="#16100D"/>
+    <stop offset="1" stop-color="#090503"/>
+  </linearGradient>
+  <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#DDF4FF"/>
+    <stop offset=".45" stop-color="#79B8D6"/>
+    <stop offset="1" stop-color="#375D77"/>
+  </linearGradient>
+  <linearGradient id="fire" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#FFE0A3"/>
+    <stop offset=".42" stop-color="#D8792B"/>
+    <stop offset="1" stop-color="#7D2A16"/>
+  </linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#E3E9EC"/>
+    <stop offset=".5" stop-color="#75828B"/>
+    <stop offset="1" stop-color="#242B30"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r=".7" fill="#FFFFFF" opacity=".025"/>
+    <circle cx="7" cy="6" r=".6" fill="#FFFFFF" opacity=".018"/>
+  </pattern>
+</defs>
+
+<rect width="1600" height="560" rx="24" fill="url(#bg)"/>
+<rect width="1600" height="560" rx="24" fill="url(#grain)"/>
+
+<!-- atmosphere -->
+<g opacity=".16">
+  <path d="M0 420C190 380 330 395 480 430C650 470 770 460 800 455V560H0Z" fill="url(#ice)"/>
+  <path d="M1600 420C1410 380 1270 395 1120 430C950 470 830 460 800 455V560H1600Z" fill="url(#fire)"/>
+</g>
+
+<!-- top labels -->
+<rect x="72" y="62" width="252" height="42" rx="9" fill="#09121B" stroke="#527B94"/>
+<text x="92" y="90" fill="#CFEFFF" font-size="20" font-family="Georgia, serif" font-weight="700">THE REALM // CINEMATIC ARCHIVE</text>
+
+<rect x="1324" y="62" width="204" height="42" rx="9" fill="#180C07" stroke="#965027"/>
+<circle cx="1350" cy="83" r="7" fill="#F5A34E" filter="url(#glow)"/>
+<text x="1366" y="90" fill="#FFE4B9" font-size="19" font-family="Georgia, serif" font-weight="700">EXPERIENCE LIVE</text>
+
+<!-- title -->
+<text x="72" y="190" fill="#F1EEE7" font-size="65" font-family="Cinzel, Georgia, serif" font-weight="700">GAME OF THRONES</text>
+<text x="74" y="236" fill="#B8C4CC" font-size="27" font-family="Cormorant Garamond, Georgia, serif">A CINEMATIC EXPERIENCE // THE REALM REMEMBERS</text>
+
+<!-- left ice motif -->
+<g transform="translate(92 278)" stroke="url(#ice)" stroke-width="4" opacity=".9">
+  <path d="M50 0V118M0 59H100M15 22L85 96M85 22L15 96"/>
+  <path d="M50 0L41 17M50 0L59 17M50 118L41 101M50 118L59 101"/>
+  <path d="M0 59L17 50M0 59L17 68M100 59L83 50M100 59L83 68"/>
+</g>
+
+<!-- right flame motif -->
+<g transform="translate(1390 264)" fill="url(#fire)" filter="url(#glow)">
+  <path d="M60 0C82 38 42 55 67 82C85 102 105 86 105 65C123 88 121 121 100 143C78 165 39 166 18 143C-8 115 5 76 29 56C29 78 47 84 54 69C63 50 47 32 60 0Z"/>
+  <path d="M62 56C73 75 57 85 67 98C76 109 89 103 91 91C99 105 95 126 83 136C70 147 50 145 39 133C26 118 32 99 45 88C44 101 54 105 60 97C67 88 56 75 62 56Z" fill="#251007"/>
+</g>
+
+<!-- system panels -->
+<g transform="translate(245 292)">
+  <rect width="420" height="110" rx="15" fill="#08111A" stroke="#41657A"/>
+  <text x="22" y="31" fill="#8FD0EE" font-size="17" font-family="Consolas, monospace">&gt; PROLOGUE :: DARKNESS → ICE → FIRE</text>
+  <text x="22" y="59" fill="#E5E7E9" font-size="17" font-family="Consolas, monospace">&gt; SCRUB_ENGINE :: FRAME-PERFECT CANVAS</text>
+  <text x="22" y="87" fill="#E5E7E9" font-size="17" font-family="Consolas, monospace">&gt; MOTION_STATE :: GSAP + LENIS</text>
+</g>
+
+<g transform="translate(690 292)">
+  <rect width="220" height="110" rx="15" fill="#0C1219" stroke="#536875"/>
+  <text x="18" y="29" fill="#C6D1D8" font-size="16" font-family="Georgia, serif" font-weight="700">THE NORTH</text>
+  <text x="18" y="63" fill="#A7D9EF" font-size="31" font-family="Georgia, serif" font-weight="700">ICE</text>
+  <text x="18" y="88" fill="#7898A8" font-size="13" font-family="Consolas, monospace">JON SNOW CHAPTER</text>
+</g>
+
+<g transform="translate(930 292)">
+  <rect width="220" height="110" rx="15" fill="#17100C" stroke="#8E4D28"/>
+  <text x="18" y="29" fill="#E4CBB9" font-size="16" font-family="Georgia, serif" font-weight="700">FIRE AND BLOOD</text>
+  <text x="18" y="63" fill="#F0A25D" font-size="31" font-family="Georgia, serif" font-weight="700">FIRE</text>
+  <text x="18" y="88" fill="#9E6C4D" font-size="13" font-family="Consolas, monospace">DAENERYS CHAPTER</text>
+</g>
+
+<g transform="translate(1170 292)">
+  <rect width="250" height="110" rx="15" fill="#11100E" stroke="#7D6D55"/>
+  <text x="18" y="29" fill="#D9D1C1" font-size="16" font-family="Georgia, serif" font-weight="700">THE FINAL SEQUENCE</text>
+  <text x="18" y="63" fill="#E2D7C7" font-size="29" font-family="Georgia, serif" font-weight="700">FINALE</text>
+  <text x="18" y="88" fill="#8F887B" font-size="13" font-family="Consolas, monospace">MIST → ROAR → FIRE</text>
+</g>
+
+<!-- throne / swords -->
+<g transform="translate(744 420)" opacity=".7">
+  <path d="M56 88V10M76 88V0M96 88V16M116 88V6M136 88V20" stroke="url(#steel)" stroke-width="6"/>
+  <path d="M45 88H148L132 116H61Z" fill="#191C1F" stroke="#6D757A"/>
+  <path d="M47 40L69 88M147 40L125 88" stroke="url(#steel)" stroke-width="5"/>
+</g>
+
+<path d="M72 455H575" stroke="#557A90" opacity=".45"/>
+<path d="M1025 455H1528" stroke="#9A512B" opacity=".45"/>
+<text x="72" y="505" fill="#65747D" font-size="15" font-family="Consolas, monospace">VITE + GSAP + LENIS // SCROLL-SCRUBBED CINEMA // CLOUDFLARE PAGES</text>
+</svg>
