@@ -1,0 +1,12 @@
+<svg width="1200" height="76" viewBox="0 0 1200 76" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fire and ice section divider">
+<defs>
+  <linearGradient id="left" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#162633"/><stop offset="1" stop-color="#79B9D8"/></linearGradient>
+  <linearGradient id="right" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#D47B34"/><stop offset="1" stop-color="#30120A"/></linearGradient>
+</defs>
+<rect width="1200" height="76" rx="14" fill="#080A0D"/>
+<path d="M34 38H485" stroke="url(#left)" stroke-width="2"/>
+<path d="M715 38H1166" stroke="url(#right)" stroke-width="2"/>
+<circle cx="600" cy="38" r="27" stroke="#6E675D" opacity=".65"/>
+<path d="M600 14L607 30L625 32L612 44L616 62L600 53L584 62L588 44L575 32L593 30Z" fill="#B9B1A3"/>
+<path d="M550 38C564 25 577 24 591 31M650 38C636 25 623 24 609 31" stroke="#837B6E" opacity=".75"/>
+</svg>
