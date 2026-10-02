@@ -206,6 +206,13 @@ Cloudflare Pages reads `_headers` from the output root automatically.
   <img src="./assets/readme/fire-ice-divider.svg" alt="Fire and ice divider" width="100%" />
 </p>
 
+## ✦ CREDITS // PROJECT
+
+<p align="center">
+  <strong>Built by Creatary Labs</strong><br />
+  <sub>Interactive cinematic web experiment · 2026</sub>
+</p>
+
 ## ☽ SYSTEM NOTICE // FAN PROJECT
 
 > This is an **unofficial, non-commercial Game of Thrones-inspired fan project** created as a cinematic front-end and motion-design experiment. Game of Thrones and related names, characters and marks belong to their respective rights holders. This project is not affiliated with or endorsed by HBO or the official franchise rights holders.
