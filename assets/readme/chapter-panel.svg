@@ -1,0 +1,55 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Cinematic chapters</title>
+<desc id="desc">Overview of the prologue, realm, world, Jon Snow, Daenerys and finale chapters.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="500"><stop stop-color="#080B10"/><stop offset="1" stop-color="#15100D"/></linearGradient>
+</defs>
+<rect width="1200" height="500" rx="22" fill="url(#bg)"/>
+<rect x="24" y="24" width="1152" height="452" rx="17" stroke="#675B4B"/>
+<text x="48" y="69" fill="#EEE8DE" font-size="28" font-family="Georgia, serif" font-weight="700">THE CINEMATIC JOURNEY</text>
+<text x="48" y="95" fill="#817A70" font-size="15" font-family="Consolas, monospace">ONE CONTINUOUS REALM // MULTIPLE SCROLL-SCRUBBED CHAPTERS</text>
+
+<g transform="translate(48 128)">
+  <rect width="335" height="135" rx="15" fill="#0B121A" stroke="#456A80"/>
+  <text x="18" y="29" fill="#8CC5DF" font-size="15" font-family="Consolas, monospace">CHAPTER 01</text>
+  <text x="18" y="61" fill="#E9EDF0" font-size="24" font-family="Georgia, serif" font-weight="700">PROLOGUE</text>
+  <text x="18" y="89" fill="#9DAAB2" font-size="15" font-family="'Segoe UI', Arial">Darkness → suspense → ice → fire</text>
+  <text x="18" y="113" fill="#6E8998" font-size="13" font-family="Consolas, monospace">SCROLL-SCRUBBED TITLE REVEAL</text>
+</g>
+<g transform="translate(408 128)">
+  <rect width="335" height="135" rx="15" fill="#101111" stroke="#6B655C"/>
+  <text x="18" y="29" fill="#AFA79B" font-size="15" font-family="Consolas, monospace">CHAPTER 02</text>
+  <text x="18" y="61" fill="#ECE7DE" font-size="24" font-family="Georgia, serif" font-weight="700">THE REALM</text>
+  <text x="18" y="89" fill="#AAA39A" font-size="15" font-family="'Segoe UI', Arial">Living hero + portal gateway</text>
+  <text x="18" y="113" fill="#7E7770" font-size="13" font-family="Consolas, monospace">PARALLAX / NAVIGATION / ATMOSPHERE</text>
+</g>
+<g transform="translate(768 128)">
+  <rect width="335" height="135" rx="15" fill="#0C1115" stroke="#526975"/>
+  <text x="18" y="29" fill="#8BA6B5" font-size="15" font-family="Consolas, monospace">CHAPTER 03</text>
+  <text x="18" y="61" fill="#E5E9EC" font-size="24" font-family="Georgia, serif" font-weight="700">THE KNOWN WORLD</text>
+  <text x="18" y="89" fill="#9CA7AC" font-size="15" font-family="'Segoe UI', Arial">Seven kingdoms, one throne</text>
+  <text x="18" y="113" fill="#71828A" font-size="13" font-family="Consolas, monospace">ATMOSPHERIC WORLD JOURNEY</text>
+</g>
+
+<g transform="translate(48 288)">
+  <rect width="335" height="135" rx="15" fill="#0A1219" stroke="#4D7188"/>
+  <text x="18" y="29" fill="#94CBE5" font-size="15" font-family="Consolas, monospace">CHAPTER 04</text>
+  <text x="18" y="61" fill="#EDF5F8" font-size="24" font-family="Georgia, serif" font-weight="700">JON SNOW</text>
+  <text x="18" y="89" fill="#AABCC4" font-size="15" font-family="'Segoe UI', Arial">The North · storm · memorial finale</text>
+  <text x="18" y="113" fill="#6F929F" font-size="13" font-family="Consolas, monospace">THE WHITE WOLF / LONG NIGHT</text>
+</g>
+<g transform="translate(408 288)">
+  <rect width="335" height="135" rx="15" fill="#17100B" stroke="#95532C"/>
+  <text x="18" y="29" fill="#E3A06A" font-size="15" font-family="Consolas, monospace">CHAPTER 05</text>
+  <text x="18" y="61" fill="#FFF0E1" font-size="24" font-family="Georgia, serif" font-weight="700">DAENERYS</text>
+  <text x="18" y="89" fill="#C8A896" font-size="15" font-family="'Segoe UI', Arial">Fire and Blood · ash · dragon legacy</text>
+  <text x="18" y="113" fill="#A46B4E" font-size="13" font-family="Consolas, monospace">MOTHER OF DRAGONS / QUEEN OF ASHES</text>
+</g>
+<g transform="translate(768 288)">
+  <rect width="335" height="135" rx="15" fill="#11100E" stroke="#776957"/>
+  <text x="18" y="29" fill="#B8AA99" font-size="15" font-family="Consolas, monospace">CHAPTER 06</text>
+  <text x="18" y="61" fill="#F2ECE4" font-size="24" font-family="Georgia, serif" font-weight="700">FINALE</text>
+  <text x="18" y="89" fill="#B6AEA4" font-size="15" font-family="'Segoe UI', Arial">Mist → black → roar → fire → black</text>
+  <text x="18" y="113" fill="#877E72" font-size="13" font-family="Consolas, monospace">TIMED CINEMATIC ENDING + EPILOGUE</text>
+</g>
+</svg>
